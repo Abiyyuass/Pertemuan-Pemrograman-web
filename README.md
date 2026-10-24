@@ -1,7 +1,7 @@
 # Pertemuan-Pemrograman-web
 # Daftar Kegiatan
 
-Aplikasi pengelola tugas sederhana berbasis HTML, CSS, dan JavaScript murni (tanpa framework dan tanpa instalasi). Data tersimpan otomatis di peramban.
+Aplikasi pengelola tugas sederhana berbasis HTML, CSS, dan JavaScript murni (tanpa framework dan tanpa instalasi). Data tersimpan otomatis.
 
 ## Fitur
 
@@ -18,7 +18,7 @@ Aplikasi pengelola tugas sederhana berbasis HTML, CSS, dan JavaScript murni (tan
 
 ## Struktur Proyek
 
-```
+
 daftar-kegiatan/
 ├── index.html   # Struktur halaman
 ├── style.css    # Tampilan
