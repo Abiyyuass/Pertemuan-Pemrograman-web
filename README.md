@@ -1,9 +1,8 @@
-# Pertemuan-Pemrograman-web
 # Daftar Kegiatan
 
 Aplikasi pengelola tugas sederhana berbasis HTML, CSS, dan JavaScript murni (tanpa framework dan tanpa instalasi). Data tersimpan otomatis.
 
-## Fitur
+# Fitur
 
 - Tambah tugas dengan nama, kategori, prioritas, dan tenggat waktu
 - Tandai tugas selesai dengan kotak centang
