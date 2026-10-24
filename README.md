@@ -12,3 +12,4 @@ Aplikasi pengelola tugas sederhana berbasis HTML, CSS, dan JavaScript murni (tan
 - Ringkasan statistik dan bar progres penyelesaian
 - Data tersimpan di `localStorage`, jadi tidak hilang saat halaman di-refresh
 - Tampilan responsif untuk layar ponsel dan desktop
+
