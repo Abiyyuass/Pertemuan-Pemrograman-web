@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Kegiatan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+
+    <header class="header">
+        <div>
+            <p class="eyebrow">PENGELOLA TUGAS</p>
+            <h1>Daftar Kegiatan</h1>
+            <p class="subtitle">Catat, pantau, dan selesaikan tugasmu.</p>
+        </div>
+        <div class="date-box">
+            <span>Hari ini</span>
+            <strong id="todayDate">-</strong>
+        </div>
+    </header>
+
+    <section class="welcome">
+        <div>
+            <h2 id="welcomeTitle">Halo!</h2>
+            <p id="welcomeText">Mulai dengan menambahkan tugas pertamamu.</p>
+        </div>
+        <div class="welcome-icon" aria-hidden="true">✓</div>
+    </section>
+
+    <section class="stats" aria-label="Ringkasan tugas">
+        <div class="stat-card">
+            <span>Total tugas</span>
+            <strong id="statTotal">0</strong>
+            <small>Semua kegiatan</small>
+        </div>
+        <div class="stat-card">
+            <span>Selesai</span>
+            <strong id="statDone">0</strong>
+            <small>Sudah dikerjakan</small>
+        </div>
+        <div class="stat-card">
+            <span>Belum selesai</span>
+            <strong id="statPending">0</strong>
+            <small>Masih perlu dikerjakan</small>
+        </div>
+    </section>
+
+    <main class="content">
+        <section class="panel">
+            <h2>Tambah Tugas</h2>
+            <p class="panel-description">Isi formulir lalu tekan tombol tambah.</p>
+
+            <form id="taskForm">
+                <label for="taskTitle">Nama tugas</label>
+                <input type="text" id="taskTitle" placeholder="Masukkan nama tugas" maxlength="100" required>
+
+                <label for="taskCategory">Kategori</label>
+                <select id="taskCategory">
+                    <option value="Kuliah">Kuliah</option>
+                    <option value="Pribadi">Pribadi</option>
+                    <option value="Pekerjaan">Pekerjaan</option>
+                    <option value="Lainnya">Lainnya</option>
+                </select>
+
+                <label for="taskPriority">Prioritas</label>
+                <select id="taskPriority">
+                    <option value="Tinggi">Tinggi</option>
+                    <option value="Sedang" selected>Sedang</option>
+                    <option value="Rendah">Rendah</option>
+                </select>
+
+                <label for="taskDate">Tenggat waktu</label>
+                <input type="date" id="taskDate" required>
+
+                <button type="submit" class="primary-button">+ Tambahkan Tugas</button>
+            </form>
+        </section>
+
+        <section class="panel task-panel">
+            <div class="panel-head">
+                <div>
+                    <h2>Daftar Kegiatan</h2>
+                    <p class="panel-description" id="listInfo">Belum ada tugas.</p>
+                </div>
+                <button type="button" id="clearDone" class="ghost-button" hidden>Hapus yang selesai</button>
+            </div>
+
+            <div class="toolbar">
+                <input type="search" id="searchInput" placeholder="Cari tugas..." aria-label="Cari tugas">
+                <select id="filterSelect" aria-label="Filter tugas">
+                    <option value="semua">Semua</option>
+                    <option value="belum">Belum selesai</option>
+                    <option value="selesai">Selesai</option>
+                    <option value="terlambat">Terlambat</option>
+                </select>
+            </div>
+
+            <div id="taskList" class="task-list"></div>
+
+            <div id="emptyState" class="empty-state">
+                <div class="empty-icon" aria-hidden="true">📝</div>
+                <h3 id="emptyTitle">Belum ada tugas</h3>
+                <p id="emptyText">Tambahkan tugas pertamamu melalui formulir.</p>
+            </div>
+
+            <div class="progress-section">
+                <div class="progress-label">
+                    <span>Progres penyelesaian</span>
+                    <strong id="progressText">0%</strong>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>Data tersimpan otomatis di peramban kamu.</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
