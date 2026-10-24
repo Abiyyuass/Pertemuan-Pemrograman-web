@@ -1,5 +1,3 @@
-# Daftar Kegiatan
-
 Aplikasi pengelola tugas sederhana berbasis HTML, CSS, dan JavaScript murni (tanpa framework dan tanpa instalasi). Data tersimpan otomatis.
 
 # Fitur
